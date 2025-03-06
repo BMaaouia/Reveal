@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+.doughnut_chart::before {
+    text-align: center;
+    margin: 5% auto;
+    color: #5e5e5e;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container > div {
+    min-width: 300px;
+    min-height: 300px;
+    width: 30vw;
+    height: 30vw;
+    margin: 2% 4%;
+}
+
+.container > div:nth-last-child(1) {
+    height: auto;
+}
+
+/* 도넛차트 */
+.doughnut_chart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3),
+        -10px -10px 15px rgba(0, 0, 0, 0.2) inset,
+        10px 10px 15px rgba(255, 255, 255, 0.7) inset;
+}
+
+.doughnut_chart::before {
+    content: "DOUGHNUT CHART";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3) inset,
+        -10px -10px 15px rgba(0, 0, 0, 0.2),
+        10px 10px 15px rgba(255, 255, 255, 0.7);
+    width: 60%;
+    height: 60%;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.mark {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%) rotate(0);
+}
+
+.mark_content {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    transform: translateX(-50%) rotate(-0deg);
+    cursor: pointer;
+}
+
+/* 입력칸리스트 */
+.contents_box {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+  white-space:nowrap;
+  text-align:center;
+}
+
+.chart_list {
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+    padding: 1% 2%;
+    border: 1px solid #e7e7e7;
+}
+
+.chart_list > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.chart_list > div > span {
+    font-weight: 600;
+    color: gray;
+}
+
+input {
+    width: 100px;
+}
+
+.submit_button {
+    margin: 5% auto;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: gray;
+    background: rgb(255, 255, 255);
+    border: solid 3px #dadada;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.submit_button:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+}
