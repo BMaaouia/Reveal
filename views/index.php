@@ -1579,7 +1579,6 @@ box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.18);
   <script src="../Front/lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="../Front/lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="../Front/lib/sticky/sticky.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
 
